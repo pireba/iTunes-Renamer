@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane vgap="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints minWidth="150.0" />
+    <ColumnConstraints hgrow="ALWAYS" />
+  </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="Start Position:" />
+      <HBox GridPane.columnIndex="1">
+         <children>
+            <Spinner fx:id="startPosition" editable="true" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+            </Spinner>
+            <ToggleButton fx:id="startLeft" minWidth="60.0" selected="true" text="→ abc">
+               <toggleGroup>
+                  <ToggleGroup fx:id="groupStart" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="startRight" minWidth="60.0" text="abc ←" toggleGroup="$groupStart">
+            </ToggleButton>
+         </children>
+      </HBox>
+      <Label text="End Position:" GridPane.rowIndex="1" />
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Spinner fx:id="endPosition" editable="true" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+            </Spinner>
+            <ToggleButton fx:id="endLeft" minWidth="60.0" selected="true" text="→ abc">
+               <toggleGroup>
+                  <ToggleGroup fx:id="groupEnd" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="endRight" minWidth="60.0" text="abc ←" toggleGroup="$groupEnd">
+            </ToggleButton>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

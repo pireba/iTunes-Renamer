@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane vgap="10.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints minWidth="150.0" />
+    <ColumnConstraints hgrow="ALWAYS" />
+  </columnConstraints>
+   <children>
+      <Label text="Search:" />
+      <TextField fx:id="search" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+      </TextField>
+      <Label text="Replace:" GridPane.rowIndex="1" />
+      <TextField fx:id="replace" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+      </TextField>
+      <CheckBox fx:id="caseSensitive" mnemonicParsing="false" text="Case Sensitive" GridPane.columnSpan="2" GridPane.rowIndex="2">
+      </CheckBox>
+      <CheckBox fx:id="regularExpression" mnemonicParsing="false" text="Regular Expression" GridPane.columnSpan="2" GridPane.rowIndex="3">
+      </CheckBox>
+   </children>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

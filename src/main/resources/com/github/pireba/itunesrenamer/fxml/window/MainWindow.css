@@ -1,0 +1,12 @@
+.split-pane {
+	-fx-padding: 1 0 1 0;
+}
+
+.split-pane-divider {
+   -fx-padding: 0 1 0 0;  
+}
+
+.table-view {
+	-fx-padding: 0;
+	-fx-background-insets: 0;
+}

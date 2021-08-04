@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import com.github.pireba.itunesrenamer.fxml.control.ITunesTagComboBox?>
+
+<GridPane vgap="10.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints minWidth="150.0" />
+    <ColumnConstraints hgrow="ALWAYS" />
+  </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="Position:" />
+      <HBox GridPane.columnIndex="1">
+         <children>
+            <Spinner fx:id="position" editable="true" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+            </Spinner>
+            <ToggleButton fx:id="left" minWidth="60.0" mnemonicParsing="false" selected="true" text="→ abc">
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="right" minWidth="60.0" mnemonicParsing="false" text="abc ←" toggleGroup="$toggleGroup">
+            </ToggleButton>
+         </children>
+      </HBox>
+      <Label text="Tag:" GridPane.rowIndex="1" />
+      <ITunesTagComboBox fx:id="tag" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+      </ITunesTagComboBox>
+   </children>
+</GridPane>

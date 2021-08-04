@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane vgap="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints minWidth="150.0" />
+    <ColumnConstraints hgrow="ALWAYS" />
+  </columnConstraints>
+   <children>
+      <Label text="Case:" />
+      <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1">
+         <children>
+            <ToggleButton fx:id="lowerCase" minWidth="60.0" selected="true" text="abc">
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="upperCase" minWidth="60.0" text="ABC" toggleGroup="$toggleGroup">
+            </ToggleButton>
+            <ToggleButton fx:id="startCase" minWidth="60.0" text="Abc" toggleGroup="$toggleGroup">
+            </ToggleButton>
+         </children>
+      </HBox>
+   </children>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
