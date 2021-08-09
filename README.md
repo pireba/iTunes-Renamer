@@ -120,13 +120,13 @@ mvn clean javafx:run
 Build an executable jar from the source:
 
 ```
-mvn clean install
+mvn clean compile package
 ```
 
 Build a native application using the createPackage.sh script:
 
 ```
-mvn clean compile package
+mvn clean install
 ```
 
 ## Credits
