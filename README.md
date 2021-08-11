@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="media/icon.png" width="256" height="256">
+</p>
+
 # iTunes-Renamer
 
 A bulk renamer for iTunes media items.
